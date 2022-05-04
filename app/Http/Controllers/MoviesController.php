@@ -4,11 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Movie;
-class AllMovies extends Controller
+class MoviesController extends Controller
 {
     public function list() {
         $myMovies = Movie::all();
-        dd($myMovies);
-        return view('movies');
+        $data = [
+            'movies' => $myMovies
+        ];
+        return view('movies', $data);
     }
 }

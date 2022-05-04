@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  width: 1000px;
+  margin: auto;
+  border-radius: 0.5rem;
+  border: 5px solid red;
+}
+
+.odd-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: orange;
+  width: 100%;
+  height: 80px;
+  padding: 1rem;
+}
+
+.odd-card .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.even-card {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  background-color: yellow;
+  width: 100%;
+  height: 80px;
+  padding: 1rem;
+}
+
+.even-card .titles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
