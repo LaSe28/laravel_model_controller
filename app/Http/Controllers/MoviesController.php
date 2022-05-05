@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Movie;
 class MoviesController extends Controller
 {
-    public function list() {
+    public function index() {
         $myMovies = Movie::all();
         $data = [
             'movies' => $myMovies
